@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+html {
+  font-size: 67.5%;
+
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 2rem;
+  width: 100vw;
+  overflow-x: hidden;
+  background: linear-gradient(
+    180deg,
+    #343f56 40%,
+    rgb(63, 63, 63) 70%,
+    rgb(98, 98, 98) 100%
+  );
+}
+section {
+  min-height: 100vh;
+  padding: 200px;
+}
