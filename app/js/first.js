@@ -1,11 +1,10 @@
 const texts = ["Web pages", "Web apps"];
 const h1 = document.querySelector("#first>h1");
-// h1.textContent = texts[0];
-const switchText = () => {
+function switchText() {
   let i = 0;
-  while (i < 2) {
-    setTimeout(() => console.log(texts[i]), 1000);
-    i++;
-  }
-};
+  setInterval(() => {
+    h1.innerHTML = texts[i];
+    i == 1 ? (i = 0) : i++;
+  }, 4000);
+}
 export default switchText;

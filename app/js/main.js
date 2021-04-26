@@ -1,2 +1,4 @@
-import switchText from "./first.js";
-switchText();
+import timeout from "./first.js";
+import addIcons from "./icons.js";
+timeout();
+addIcons();

@@ -1,0 +1,14 @@
+#skills {
+  h1 {
+    @include section-header;
+  }
+  .category {
+    h2 {
+      font-size: 4.5rem;
+      text-align: center;
+    }
+    div {
+      display: flex;
+    }
+  }
+}
