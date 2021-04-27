@@ -9,6 +9,33 @@
     }
     div {
       display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      .iconContainer {
+        padding: 30px;
+        width: 200px;
+        border-radius: 10px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 100%;
+          transition: 0.5s;
+        }
+        &:hover img {
+          filter: invert(97%) sepia(11%) saturate(212%) hue-rotate(262deg)
+            brightness(115%) contrast(100%);
+        }
+        &:hover h3 {
+          opacity: 1;
+        }
+        h3 {
+          opacity: 0;
+          margin-top: 10px;
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
     }
   }
 }
