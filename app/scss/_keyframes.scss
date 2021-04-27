@@ -1,14 +1,35 @@
 @keyframes switchText {
   0% {
     opacity: 0;
+    font-size: 7rem;
   }
   25% {
     opacity: 1;
+    font-size: 3rem;
   }
   75% {
     opacity: 1;
   }
   100% {
+    opacity: 0;
+  }
+}
+
+@keyframes moveBall {
+  0% {
+    top: 25%;
+    opacity: 0;
+  }
+  30% {
+    top: 25%;
+    opacity: 1;
+  }
+  70% {
+    top: 75%;
+    opacity: 1;
+  }
+  100% {
+    top: 75%;
     opacity: 0;
   }
 }

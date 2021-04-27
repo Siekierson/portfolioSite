@@ -2,3 +2,17 @@
   font-size: 6rem;
   margin: 5%;
 }
+@mixin inputs {
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  transition: 0.5s;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  &:focus {
+    outline: none;
+    border-color: rgb(141, 0, 0);
+  }
+}

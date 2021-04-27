@@ -19,6 +19,28 @@
     transform: translate(-50%, -50%);
     font-size: 9rem;
     font-weight: 700;
-    animation: infinite switchText 4s;
+    animation: infinite switchText 3s;
+  }
+  #toScroll {
+    height: 100px;
+    width: 50px;
+    border: 2px solid white;
+    z-index: 99;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 35px;
+      width: 35px;
+      background-color: #fff;
+      border-radius: 20px;
+      animation: linear moveBall infinite 2s;
+    }
   }
 }

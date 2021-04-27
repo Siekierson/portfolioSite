@@ -1,0 +1,27 @@
+#contact {
+  color: white;
+  h1 {
+    @include section-header;
+  }
+  input {
+    width: 46%;
+    @include inputs;
+    &:first-of-type {
+      margin-right: 8%;
+    }
+  }
+  textarea {
+    margin-top: 20px;
+    width: 100%;
+    @include inputs;
+  }
+  button {
+    margin: 30px 40%;
+    font-size: 2.5rem;
+    background-color: transparent;
+    padding: 15px 60px;
+    border-radius: 15px;
+    border: 1px solid white;
+    text-align: right;
+  }
+}
