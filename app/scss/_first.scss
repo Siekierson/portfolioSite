@@ -25,7 +25,7 @@
     height: 100px;
     width: 50px;
     border: 2px solid white;
-    z-index: 99;
+    z-index: 9;
     position: absolute;
     top: 90%;
     left: 50%;
@@ -40,7 +40,7 @@
       width: 35px;
       background-color: #fff;
       border-radius: 20px;
-      animation: linear moveBall infinite 2s;
+      animation: linear moveBall infinite 3s;
     }
   }
 }
