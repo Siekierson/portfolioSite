@@ -17,13 +17,36 @@ body {
   width: 100vw;
   overflow-x: hidden;
   background: linear-gradient(
-    #050505 25%,
-    #343f56 40%,
-    rgb(63, 63, 63) 70%,
+    #050505 20%,
+    $bg-blue 55%,
+    rgb(63, 63, 63) 80%,
     rgb(98, 98, 98) 100%
   );
 }
+
 section,
 form {
   padding: 100px 200px;
+}
+
+::-webkit-scrollbar {
+  cursor: pointer;
+  width: 20px;
+  background-color: black;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: darken($bg-blue, 10%);
+  border-radius: 10px;
+  transition: 0.5s;
+  &:hover {
+    background-color: darken($bg-blue, 15%);
+  }
 }
