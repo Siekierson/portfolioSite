@@ -9,7 +9,9 @@
 }
 html {
   font-size: 67.5%;
-
+  @media (max-width: 600px) {
+    font-size: 45%;
+  }
   scroll-behavior: smooth;
 }
 body {

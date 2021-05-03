@@ -35,10 +35,14 @@
   }
 }
 @keyframes loader {
-  from {
+  0% {
     width: 80vw;
   }
-  to {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
     width: 5vw;
   }
 }
