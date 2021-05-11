@@ -1,5 +1,4 @@
 #projects {
-  padding: 100px 100px;
   h1 {
     @include section-header;
   }
@@ -8,14 +7,28 @@
     &:first-of-type {
       margin-bottom: 100px;
     }
-    p {
-      font-size: 3rem;
-      padding: 0 50px;
-      a {
-        text-decoration: none;
-        color: darken($bg-blue, 30%);
+    @media (max-width: 600px) {
+      display: block;
+    }
+    div {
+      h2 {
+        font-size: 4rem;
+        padding: 10px 40px;
+      }
+      p {
+        font-size: 3rem;
+        padding: 0 50px;
+        @media (max-width: 600px) {
+          font-size: 2.5rem;
+          padding: 0 20px;
+        }
+        a {
+          text-decoration: none;
+          color: darken($bg-blue, 30%);
+        }
       }
     }
+
     video {
       border-radius: 10px;
       width: 55%;
@@ -24,9 +37,15 @@
       &:hover {
         filter: grayscale(0);
       }
+      @media (max-width: 600px) {
+        width: 100%;
+      }
     }
     &:nth-of-type(odd) {
       flex-direction: row-reverse;
+    }
+    @media (max-width: 600px) {
+      flex-direction: row;
     }
   }
 }

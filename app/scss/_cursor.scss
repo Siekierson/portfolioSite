@@ -21,3 +21,9 @@
   pointer-events: none;
   background-color: #fff;
 }
+@media (max-width: 600px) {
+  #cursor,
+  #point {
+    display: none;
+  }
+}

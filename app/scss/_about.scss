@@ -3,22 +3,17 @@
   h1 {
     @include section-header;
   }
-  //   .img-hover-zoom--quick-zoom img {
-  //     transform-origin: 0 0;
-  //     transition: transform .25s, visibility .25s ease-in;
-  //   }
-
-  //   .img-hover-zoom--quick-zoom:hover img {
-  //     transform: scale(2);
-  //   }
   div {
     img {
       width: 40%;
       padding: 0 3% 1% 0;
-      border-radius: 10px 10px 10px 10px;
+      border-radius: 10px;
       transition: transform 0.25s, visibility 0.25s ease-in;
       float: left;
       transform-origin: 0 0;
+      @media (max-width: 600px) {
+        width: 60%;
+      }
     }
     :hover img {
       transform: scale(1.5);
@@ -28,5 +23,8 @@
   p {
     line-height: 1.5;
     font-size: 2.6rem;
+    @media (max-width: 600px) {
+      font-size: 2.3rem;
+    }
   }
 }

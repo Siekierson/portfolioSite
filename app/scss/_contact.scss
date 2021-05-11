@@ -1,22 +1,26 @@
 #contact {
   color: white;
+  text-align: center;
   h1 {
     @include section-header;
   }
   input {
     width: 46%;
+    margin-bottom: 20px;
     @include inputs;
     &:first-of-type {
       margin-right: 8%;
     }
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
   textarea {
-    margin-top: 20px;
     width: 100%;
+    resize: none;
     @include inputs;
   }
   button {
-    margin: 30px 40%;
     font-size: 2.5rem;
     background-color: transparent;
     padding: 15px 60px;

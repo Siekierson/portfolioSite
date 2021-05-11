@@ -25,6 +25,9 @@
     font-weight: 700;
     text-align: center;
     animation: infinite switchText 3s;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
   #toScroll {
     height: 100px;

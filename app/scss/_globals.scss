@@ -29,6 +29,9 @@ body {
 section,
 form {
   padding: 100px 200px;
+  @media (max-width: 600px) {
+    padding: 10px 20px;
+  }
 }
 
 ::-webkit-scrollbar {
