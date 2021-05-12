@@ -7,7 +7,7 @@
     &:first-of-type {
       margin-bottom: 100px;
     }
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       display: block;
     }
     div {
@@ -18,7 +18,7 @@
       p {
         font-size: 3rem;
         padding: 0 50px;
-        @media (max-width: 700px) {
+        @media (max-width: 800px) {
           font-size: 2.5rem;
           padding: 0 20px;
         }
@@ -37,14 +37,14 @@
       &:hover {
         filter: grayscale(0);
       }
-      @media (max-width: 700px) {
+      @media (max-width: 800px) {
         width: 100%;
       }
     }
     &:nth-of-type(odd) {
       flex-direction: row-reverse;
     }
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       flex-direction: row;
     }
   }

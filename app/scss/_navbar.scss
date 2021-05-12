@@ -9,7 +9,7 @@ nav {
   justify-content: center;
   height: 120px;
   z-index: 10;
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     height: 90px;
     justify-content: space-around;
   }
@@ -21,7 +21,7 @@ nav {
     width: 18%;
     line-height: 120px;
     text-align: center;
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       display: none;
       line-height: 90px;
     }
@@ -29,7 +29,7 @@ nav {
   :nth-child(3) {
     font-size: 5.7rem;
     width: 18%;
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       width: 100%;
       text-align: center;
       display: block;
@@ -44,7 +44,7 @@ nav {
       font-size: 5rem;
       color: white;
     }
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       display: block;
     }
   }
@@ -57,14 +57,13 @@ nav {
     background-color: rgba(0, 0, 0, 0.89);
     height: 100vh;
     width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding: 5%;
+    animation: 1s slideMenu;
     a {
       display: block;
       font-size: 4rem;
       width: 100%;
+      padding: 3%;
       text-align: center;
     }
     button {
@@ -72,5 +71,8 @@ nav {
         font-size: 6rem;
       }
     }
+  }
+  .slideout {
+    animation: 1s slideMenu reverse;
   }
 }

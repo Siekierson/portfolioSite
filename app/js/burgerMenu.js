@@ -3,11 +3,18 @@ const burgerMenu = () => {
   const quit = document.querySelector("#menu>button");
   const ref = document.querySelectorAll("#menu>a");
   const menu = document.querySelector("#menu");
+  function outAnime() {
+    menu.classList.add("slideout");
+    setTimeout(() => {
+      menu.classList.remove("slideout");
+      menu.style.display = "none";
+    }, 1000);
+  }
   button.addEventListener("click", () => {
     menu.style.display = "block";
   });
   quit.addEventListener("click", () => {
-    menu.style.display = "none";
+    outAnime();
   });
   ref.forEach((item) =>
     item.addEventListener("click", () => {
